@@ -9,8 +9,7 @@
     ],
     "homepage": "http://pyrocms.com/",
     "license": "MIT",
-    "authors": [
-        {
+    "authors": [{
             "name": "PyroCMS, Inc.",
             "email": "support@pyrocms.com",
             "homepage": "http://pyrocms.com/",
@@ -27,7 +26,7 @@
         "email": "support@pyrocms.com"
     },
     "require": {
-        "anomaly/streams-platform": "^1.3"
+        "anomaly/streams-platform": "^1.7"
     },
     "autoload": {
         "psr-4": {

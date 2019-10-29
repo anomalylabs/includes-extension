@@ -1,4 +1,6 @@
-<?php namespace Anomaly\IncludesExtension\Listener;
+<?php
+
+namespace Anomaly\IncludesExtension\Listener;
 
 use Anomaly\EditorFieldType\EditorFieldType;
 use Anomaly\SettingsModule\Setting\Contract\SettingRepositoryInterface;
@@ -82,7 +84,7 @@ class RegisterIncludes
             return;
         }
 
-        $this->includes->add('head', $this->template->make($head));
-        $this->includes->add('scripts', $this->template->make($scripts));
+        $this->includes->include('head', $this->template->make($head));
+        $this->includes->include('scripts', $this->template->make($scripts));
     }
 }
